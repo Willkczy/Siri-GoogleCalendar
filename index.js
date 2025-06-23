@@ -11,7 +11,8 @@ const TIMEZONE = 'Asia/Taipei';
 app.get('/api/today-events', async (req, res) => {
   try {
     // 讀取憑證
-    const credentials = JSON.parse(fs.readFileSync('credentials.json'));
+    require('dotenv').config();
+    const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 
     // 建立授權對象
     const auth = new google.auth.GoogleAuth({

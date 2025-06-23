@@ -1,16 +1,21 @@
 {
   "name": "siri-calendar",
   "version": "1.0.0",
+  "description": "A lightweight Google Calendar webhook for Siri Shortcuts using Node.js and Vercel.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/today-events.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "google-calendar",
+    "vercel",
+    "siri",
+    "webhook"
+  ],
+  "author": "Will KCZY",
+  "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0",
-    "googleapis": "^150.0.1"
+    "dayjs": "^1.11.13",
+    "googleapis": "^132.0.0"
   }
 }
