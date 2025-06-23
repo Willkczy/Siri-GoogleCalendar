@@ -1,8 +1,5 @@
 node_modules
 .env
-.vercel
 .git
-.gitignore
-Dockerfile
-docker-compose.yml
-README.md
+.vercel
+README.vercel.md
